@@ -1,16 +1,9 @@
-function add(x,y){
-    return x+y;
-}
-function sub(x,y){
-    return x-y;
-}
-function mul(x,y){
-    return x*y;
-}
-function div(x,y){
-    return x/y;
-}
-exports.add = add;
-exports.sub = sub;
-exports.div = div;
-exports.mul = mul;
+var cl = require('./calc')
+var x=20,y=10;
+console.log("Addition: "+cl.add(x,y));
+console.log("Subtraction: "+cl.sub(x,y));
+console.log("Multiplication: "+cl.mul(x,y));
+console.log("Division: "+cl.div(x,y));
+
+
+
